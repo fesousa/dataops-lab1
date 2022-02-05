@@ -29,11 +29,28 @@ Armazenamento com S3 e notificação com SNS.
 
     a.	O Amazon S3 (Amazon Simple Storage Service) é um serviço de armazenamento de objetos com escalabilidade, disponibilidade, segurança e desempenho. A quantidade de dados que pode ser armazenada é virtualmente ilimitada
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img3.png" height='300'/> 
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img3.png" height='270'/> 
+
+4.	O primeiro passo é criar um bucket para armazenar objetos. 
+
+    a.	Um bucket é um contêiner de objetos. Um objeto é qualquer arquivo ou documento colocado no bucket. 
+    b.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='20'/>  para criar um novo bucket
+5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
+
+    a.	“Nome do bucket”: dataops-impacta-dados-nomesobrenome
+        
+        i.	Troque “nomesobrenome” pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
+   
+    b.	“Região da AWS”: Leste dos EUA (Norte da Virgínia) us-east-1
+
+        i.	Preste atenção na região. Sempre vamos utilizar essas nos labs
+        
+    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='20'/>
+
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 20:31:02
+Last update: 2022-02-05 20:33:31
 </div>
