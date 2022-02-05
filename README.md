@@ -19,9 +19,5 @@ Armazenamento com S3 e notificação com SNS.
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
-</div>
-
-<div class="footer">
-    &copy; 2022 Fernando Sousa
     {{update}}
 </div>
