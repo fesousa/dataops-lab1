@@ -19,7 +19,7 @@ date: today
 
 ## Arquitetura da solução
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/lab2.png" height='330'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/lab1.png" height='330'/>
 
 
 
@@ -27,5 +27,5 @@ date: today
 
 
 <div class="footer">
-    &copy; 2004 Foo Corporation
+    &copy; 2022 Fernando Sousa
 </div>
