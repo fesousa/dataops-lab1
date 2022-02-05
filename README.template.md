@@ -84,7 +84,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     d.	Selecione a opção "Avançado"
 
-    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separan-do por uma vírgula (,). Os campos em negrito devem ser substituídos pelos valores da sua conta. Sempre que encontrar um campo em negrito nas instruções, lembre-se de trocar por uma configuração do seu ambiente
+    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separando por uma vírgula (,). Os campos em negrito devem ser substituídos pelos valores da sua conta. Sempre que encontrar um campo em negrito nas instruções, lembre-se de trocar por uma configuração do seu ambiente
 
 
 ```json
@@ -250,7 +250,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     b.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img23.png" height='23'/> nas opções que estão na parte superior
 
-    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanen-temente?"
+    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanentemente?"
 
     d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/> e espere a barra superior indicar que finalizou (cor verde)
 
