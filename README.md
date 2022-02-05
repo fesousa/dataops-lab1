@@ -156,7 +156,8 @@ Armazenamento com S3 e notificação com SNS.
 ```
 
 
-    f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='10'/> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='10'/> 
 
 12.	Para que a mensagem seja enviada é preciso criar assinaturas (consumidor) e definir quem vai receber a mensagem enviada para o tópico (produtor)
 
@@ -182,7 +183,7 @@ Armazenamento com S3 e notificação com SNS.
 
     d.	Você verá a tela de assinatura confirmada
 
-    e.	Volte ao console do SNS da AWS e clique novamente em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='22'/>
+    e.	Volte ao console do SNS da AWS e clique novamente em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/>
 
     f.	Selecione o tópico criado anteriormente (Topico-Evento-Dados-S3)
 
@@ -193,15 +194,14 @@ Armazenamento com S3 e notificação com SNS.
 18.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img14.png" height='22'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='22'/>
 
 
 19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-nomesobrenome)
 
-20.	Clique na aba 
+20.	Clique na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img14.png" height='22'/>
 
-21.	Procure a seção “Notificações de eventos” e clique em 
-
+21.	Procure a seção “Notificações de eventos” e clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img15.png" height='22'/>
 
 
 22.	Na tela de criação e configuração do evento, preencha:
@@ -214,9 +214,12 @@ Armazenamento com S3 e notificação com SNS.
     
     d.	"Tópico SNS": Selecione Topico-Evento-Dados-S3
     
-    e.	Clique em 
+    e.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img16.png" height='22'/>
     
     f.	Se receber o alerta abaixo, verifique a política de acesso do SNS
+
+
+ <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='22'/>
  
 
 23.	Faça um teste de incluir um arquivo no bucket
@@ -311,5 +314,5 @@ SELECT count(1) FROM s3object s
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 21:04:44
+Last update: 2022-02-05 21:12:02
 </div>
