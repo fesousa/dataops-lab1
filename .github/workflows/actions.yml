@@ -17,3 +17,10 @@ jobs:
         with:
           email: ${{ env.GIT_USER_EMAIL }}
           user: ${{ env.GIT_USER_NAME }}
+      - name: Colocar data README
+        run: |
+          date >> README.md
+          git add README.md
+          echo "Updated the time in README"
+          exit 0
+    
