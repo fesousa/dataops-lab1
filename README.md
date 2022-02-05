@@ -48,9 +48,26 @@ Armazenamento com S3 e notificação com SNS.
 &nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
 
 
+6.	Você será redirecionado para a página inicial com a lista dos buckets, na qual verá o bucket criado 
+
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" height='40'/>
+
+7.	O próximo passo é criar um tópico SNS
+
+    a.	O Amazon SNS (Amazon Simple Notification Service) é um serviço de mensagens totalmente gerenciado para comunicação entre aplicações e comunicação entre apli-cações e pessoas
+
+    b.	As mensagens são enviadas e armazenadas em um tópico, num sistema de muitos para muitos. Ou seja, uma mensagem pode ser enviada para diversos destinos
+
+    c.	Mensagem são enviadas por um sistema de push para destinos que fazem a assina-tura de um tópico. Um tópico pode ter vários assinantes
+    d.	Um assinante pode ser um e-mail, SMS, endpoint HTTP/S, função lambda, fila SQS, entre outros.
+
+8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
+
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='40'/>
+
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 20:42:44
+Last update: 2022-02-05 20:45:17
 </div>
