@@ -19,8 +19,8 @@ Armazenamento com S3 e notificação com SNS.
 
 ## Bucket S3 e notificações SNS
 
-1.	No módulo Learner Lab - Associate Services clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img1.png" height='20'/> para iniciar o ambiente AWS, caso ainda não tenha feio
-2.	Espere o status do ambiente ficar verde (<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img1.png" height='20'/> ) e clique nele para abrir o console AWS
+1.	No módulo Learner Lab - Associate Services clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img1.png" height='22'/> para iniciar o ambiente AWS, caso ainda não tenha feio
+2.	Espere o status do ambiente ficar verde (<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img2.png" height='22'/> ) e clique nele para abrir o console AWS
     a.	As instruções dos Labs estarão em português. Para alterar o idioma, procure a opção na barra inferior.
 3.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
     a.	O Amazon S3 (Amazon Simple Storage Service) é um serviço de armazenamento de objetos com escalabilidade, disponibilidade, segurança e desempenho. A quantidade de dados que pode ser armazenada é virtualmente ilimitada
@@ -31,5 +31,5 @@ Armazenamento com S3 e notificação com SNS.
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 20:28:12
+Last update: 2022-02-05 20:29:23
 </div>
