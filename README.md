@@ -102,9 +102,9 @@ Armazenamento com S3 e notificação com SNS.
 ```
 
 
-    Troque o nome do bucket (dataops-dados-nomesobrenome) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user..., campo Minha Conta)
+&nbsp;&nbsp;&nbsp;&nbsp;Troque o nome do bucket (dataops-dados-nomesobrenome) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user..., campo Minha Conta)
 
-    O documento completo da política deve ficar assim:
+&nbsp;&nbsp;&nbsp;&nbsp;O documento completo da política deve ficar assim:
 
 
 ```json
@@ -156,10 +156,160 @@ Armazenamento com S3 e notificação com SNS.
 ```
 
 
+    f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='10'/> 
+
+12.	Para que a mensagem seja enviada é preciso criar assinaturas (consumidor) e definir quem vai receber a mensagem enviada para o tópico (produtor)
+
+13.	Na lista dos tópicos (se não estiver vendo, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/> no menu lateral), clique no nome do tópico criado anteriormente.
+
+14.	Na seção "Assinaturas", clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
+
+15.	Na tela de configuração da nova assinatura preencha os seguintes campos:
+
+    a.	"Protocolo": E-mail
+
+    b.	"Endpoint: coloque o e-mail para receber a notificação
+
+    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
+
+16.	A assinatura para um e-mail depende da autorização do dono do e-mail para completar a configuração. 
+
+    a.	Acesse a caixa de e-mail que configurou na assinatura
+
+    b.	Procure pelo e-mail com o título "AWS Notification - Subscription Confirmation"
+
+    c.	Clique no link "Confirm subscription"
+
+    d.	Você verá a tela de assinatura confirmada
+
+    e.	Volte ao console do SNS da AWS e clique novamente em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='22'/>
+
+    f.	Selecione o tópico criado anteriormente (Topico-Evento-Dados-S3)
+
+    g.	Na seção assinaturas, veja que o status da assinatura está confirmado
+
+17.	Por fim, precisamos colocar um evento no S3 para enviar uma mensagem para o tópico SNS Topico-Evento-Dados-S3
+
+18.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
+
+
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img14.png" height='22'/>
+
+
+19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-nomesobrenome)
+
+20.	Clique na aba 
+
+21.	Procure a seção “Notificações de eventos” e clique em 
+
+
+
+22.	Na tela de criação e configuração do evento, preencha:
+
+    a.	"Nome do evento": Alteração de objeto
+    
+    b.	"Tipos de evento": Selecione os checkbox de "Todos os eventos de criação de objeto" e “Todos os eventos de exclusão de objeto”
+    
+    c.	"Destino": Tópico SNS
+    
+    d.	"Tópico SNS": Selecione Topico-Evento-Dados-S3
+    
+    e.	Clique em 
+    
+    f.	Se receber o alerta abaixo, verifique a política de acesso do SNS
+ 
+
+23.	Faça um teste de incluir um arquivo no bucket
+
+    a.	No console do S3, selecione o bucket criado neste lab
+
+    b.	Clique em 
+
+    c.	Clique em 
+
+    d.	Procure um arquivo no seu computador
+
+    e.	Clique em 
+    
+    f.	Clique em 
+    
+    g.	Veja o objeto carregado no bucket
+    
+    h.	Veja no seu e-mail a notificação
+
+24.	Outra forma de carregar um arquivo para o bucket S3 é arrastar e soltar o arquivo para o bucket enquanto estiver na aba             . Faça o teste seguindo os passos do console. Você também deve receber a notificação
+
+25.	A remoção também gera uma notificação. Faça o teste:
+
+    a.	Na aba               do seu bucket, selecione o arquivo carregado clicando no checkbox
+
+    b.	Clique em                nas opções que estão na parte superior
+
+    c.	Digite “excluir permanentemente” no campo de texto em “Excluir objetos permanen-temente?”
+
+    d.	Clique em 
+
+    e.	Clique em 
+
+    f.	Veja que o arquivo foi excluído
+
+    g.	Veja no seu e-mail a notificação
+
+## Consultar Dados utilizando S3 Select
+
+S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar somente parte dos dados de um objeto em um bucket S3, utilizando SQL. Ele é utilizado para reduzir o vo-lume de dados transferidos para a aplicação e deixar a consulta de objetos mais rápidas e mais baratas
+
+1.	Acesse o bucket dataops-impacta-dados-nomesobrenome criado anteriormente
+
+2.	Faça o upload do arquivo vacinas_ac_agosto.csv disponibilizado no Classroom
+
+3.	Quando o upload terminar, acesse novamente o bucket e selecione o objeto que acabou de carregar
+ 
+4.	Com o objeto selecionado, clique em 	     e depois em
+
+5.	Na tela                                          configure as opções de seleção:
+
+    a.	Configurações de entrada:
+
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: 
+
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador: 
+
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula
+
+    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque 
+
+    b.	Configurações de saída
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: 
+
+
+    c.	Consulta SQL
+
+    &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em                           para executar a consulta padrão e retornar os primeiros 4 registros do CSV
+
+
+```sql
+SELECT * FROM s3object s LIMIT 5
+```
+
+
+    &nbsp;&nbsp;&nbsp;&nbsp; ii.	Veja o resultado em Resultados da consulta
+    &nbsp;&nbsp;&nbsp;&nbsp; iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute nova-mente
+
+
+```sql
+SELECT count(1) FROM s3object s
+```
+
+    d.	Você pode utilizar a maioria das expressões SQL para consultar os dados
+
+
+
+
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 20:55:39
+Last update: 2022-02-05 21:04:44
 </div>
