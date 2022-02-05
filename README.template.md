@@ -102,9 +102,9 @@ Armazenamento com S3 e notificação com SNS.
 ```
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Troque o nome do bucket (dataops-dados-nomesobrenome) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user..., campo Minha Conta)
+    Troque o nome do bucket (dataops-dados-nomesobrenome) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user..., campo Minha Conta)
 
-&nbsp;&nbsp;&nbsp;&nbsp;O documento completo da política deve ficar assim:
+    O documento completo da política deve ficar assim:
 
 
 ```json
