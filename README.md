@@ -30,5 +30,6 @@ Armazenamento com S3 e notificação com SNS.
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
-    {{update}}
+    
+Last update: 2022-02-05 20:28:12
 </div>
