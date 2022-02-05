@@ -37,15 +37,15 @@ Armazenamento com S3 e notificação com SNS.
     b.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>  para criar um novo bucket
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
 
-&nbsp;&nbsp;&nbsp;&nbsp;5.1.	"Nome do bucket": dataops-impacta-dados-nomesobrenome
+&nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-impacta-dados-nomesobrenome
         
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1.1. Troque "nomesobrenome" pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Troque "nomesobrenome" pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
    
-&nbsp;&nbsp;&nbsp;&nbsp;5.2. "Região da AWS": Leste dos EUA (Norte da Virgínia) us-east-1
+&nbsp;&nbsp;&nbsp;&nbsp;    b. "Região da AWS": Leste dos EUA (Norte da Virgínia) us-east-1
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2.1. Preste atenção na região. Sempre vamos utilizar essas nos labs
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Preste atenção na região. Sempre vamos utilizar essas nos labs
 
-&nbsp;&nbsp;&nbsp;&nbsp;5.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
+&nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
 
 
 <div class="footer">
