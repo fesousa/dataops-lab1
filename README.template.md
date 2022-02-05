@@ -258,37 +258,40 @@ Armazenamento com S3 e notificação com SNS.
 
     g.	Veja no seu e-mail a notificação
 
+
 ## Consultar Dados utilizando S3 Select
 
-S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar somente parte dos dados de um objeto em um bucket S3, utilizando SQL. Ele é utilizado para reduzir o vo-lume de dados transferidos para a aplicação e deixar a consulta de objetos mais rápidas e mais baratas
+S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar somente parte dos dados de um objeto em um bucket S3, utilizando SQL. Ele é utilizado para reduzir o volume de dados transferidos para a aplicação e deixar a consulta de objetos mais rápidas e mais baratas
 
-1.	Acesse o bucket dataops-impacta-dados-nomesobrenome criado anteriormente
+1.	Acesse o bucket dataops-dados-nomesobrenome criado anteriormente
 
-2.	Faça o upload do arquivo vacinas_ac_agosto.csv disponibilizado no Classroom
+2.	Faça o upload do arquivo [vacinas_ac_agosto.csv](https://raw.github.com/fesousa/dataops-lab1/master/data/vacinas_ac_agosto.csv) disponibilizado
 
 3.	Quando o upload terminar, acesse novamente o bucket e selecione o objeto que acabou de carregar
- 
-4.	Com o objeto selecionado, clique em 	     e depois em
 
-5.	Na tela                                          configure as opções de seleção:
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" height='270'/>
+ 
+4.	Com o objeto selecionado, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img27.png" height='22'/> e depois em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img28.png" height='22'/>
+
+5.	Na tela <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img29.png" height='22'/> configure as opções de seleção:
 
     a.	Configurações de entrada:
 
-    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: 
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img30.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador: 
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img31.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img32.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque 
+    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='22'/>
 
     b.	Configurações de saída
-    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: 
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img34.png" height='22'/>
 
 
     c.	Consulta SQL
 
-    &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em                           para executar a consulta padrão e retornar os primeiros 4 registros do CSV
+    &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img35.png" height='22'/> para executar a consulta padrão e retornar os primeiros 4 registros do CSV
 
 
 ```sql
