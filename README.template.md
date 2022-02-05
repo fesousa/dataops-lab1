@@ -1,7 +1,10 @@
 # DataOps - Laboratório 1
 
 Laboratório para ambientação no console AWS.
+
 Armazenamento com S3 e notificação com SNS.
+
+As instruções do laboratório estão em português. Para alterar o idioma, procure a opção na barra inferior.
 
 
 ## Objetivos
@@ -19,13 +22,9 @@ Armazenamento com S3 e notificação com SNS.
 
 ## Bucket S3 e notificações SNS
 
-1.	No módulo Learner Lab - Associate Services clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img1.png" height='20'/> para iniciar o ambiente AWS, caso ainda não tenha feio
+1. Inicie seu ambiente da AWS
 
-2.	Espere o status do ambiente ficar verde (<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img2.png" height='20'/> ) e clique nele para abrir o console AWS
-
-    a.	As instruções dos Labs estarão em português. Para alterar o idioma, procure a opção na barra inferior.
-
-3.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
+2.No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
 
     a.	O Amazon S3 (Amazon Simple Storage Service) é um serviço de armazenamento de objetos com escalabilidade, disponibilidade, segurança e desempenho. A quantidade de dados que pode ser armazenada é virtualmente ilimitada
 
@@ -35,6 +34,7 @@ Armazenamento com S3 e notificação com SNS.
 
     a.	Um bucket é um contêiner de objetos. Um objeto é qualquer arquivo ou documento colocado no bucket. 
     b.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>  para criar um novo bucket
+
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
 
 &nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-dados-nomesobrenome
