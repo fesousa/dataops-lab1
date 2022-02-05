@@ -17,7 +17,6 @@ Armazenamento com S3 e notificação com SNS.
 <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/lab1.png" height='330'/>
 
 
-
 <div class="footer">
     &copy; 2022 Fernando Sousa
 </div>
