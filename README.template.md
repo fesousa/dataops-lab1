@@ -301,9 +301,9 @@ SELECT * FROM s3object s LIMIT 5
 ```
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii.	Veja o resultado em Resultados da consulta
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;;&nbsp; ii.	Veja o resultado em Resultados da consulta
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute nova-mente
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;;&nbsp; iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute nova-mente
 
 
 ```sql
