@@ -3,11 +3,6 @@
 Laboratório para ambientação no console AWS.
 Armazenamento com S3 e notificação com SNS.
 
----
-author: Fernando Sousa
-date: today
----
-
 
 ## Objetivos
 
