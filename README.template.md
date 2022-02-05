@@ -24,7 +24,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 1. Inicie seu ambiente da AWS
 
-2.No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
+2. No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
 
     a.	O Amazon S3 (Amazon Simple Storage Service) é um serviço de armazenamento de objetos com escalabilidade, disponibilidade, segurança e desempenho. A quantidade de dados que pode ser armazenada é virtualmente ilimitada
 
