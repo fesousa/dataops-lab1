@@ -33,7 +33,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 4.	O primeiro passo é criar um bucket para armazenar objetos. 
 
     a.	Um bucket é um contêiner de objetos. Um objeto é qualquer arquivo ou documento colocado no bucket. 
-    b.	Clique no botão <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='23'/>  para criar um novo bucket
+    b.	Clique no botão <span style="vertical-align:-5px"><img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='23'/></span>  para criar um novo bucket
 
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
 
