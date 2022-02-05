@@ -50,7 +50,7 @@ Armazenamento com S3 e notificação com SNS.
 
 6.	Você será redirecionado para a página inicial com a lista dos buckets, na qual verá o bucket criado 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" height='40'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" height='70'/>
 
 7.	O próximo passo é criar um tópico SNS
 
@@ -63,11 +63,11 @@ Armazenamento com S3 e notificação com SNS.
 
 8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='40'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='300'/>
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 20:45:17
+Last update: 2022-02-05 20:46:43
 </div>
