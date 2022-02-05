@@ -54,11 +54,12 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 7.	O próximo passo é criar um tópico SNS
 
-    a.	O Amazon SNS (Amazon Simple Notification Service) é um serviço de mensagens totalmente gerenciado para comunicação entre aplicações e comunicação entre apli-cações e pessoas
+    a.	O Amazon SNS (Amazon Simple Notification Service) é um serviço de mensagens totalmente gerenciado para comunicação entre aplicações e comunicação entre aplicações e pessoas
 
     b.	As mensagens são enviadas e armazenadas em um tópico, num sistema de muitos para muitos. Ou seja, uma mensagem pode ser enviada para diversos destinos
 
-    c.	Mensagem são enviadas por um sistema de push para destinos que fazem a assina-tura de um tópico. Um tópico pode ter vários assinantes
+    c.	Mensagem são enviadas por um sistema de *push* para destinos que fazem a assinatura de um tópico. Um tópico pode ter vários assinantes
+
     d.	Um assinante pode ser um e-mail, SMS, endpoint HTTP/S, função lambda, fila SQS, entre outros.
 
 8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
@@ -92,10 +93,10 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
   "Effect": "Allow",
   "Principal": { "Service": "s3.amazonaws.com" },
   "Action": "sns:Publish",
-  "Resource": "arn:aws:sns:us-east-1:id-conta:Topico-Evento-Dados-S3",
+  "Resource": "arn:aws:sns:us-east-1:***id-conta***:Topico-Evento-Dados-S3",
   "Condition": {
     "ArnLike": {
-      "aws:SourceArn": "arn:aws:s3:::dataops-dados-nomesobrenome"
+      "aws:SourceArn": "arn:aws:s3:::***dataops-dados-nomesobrenome***"
     }
   }
 }
