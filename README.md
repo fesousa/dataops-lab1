@@ -295,19 +295,23 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
 
 ```sql
+
 SELECT * FROM s3object s LIMIT 5
+
 ```
 
+ii.	Veja o resultado em Resultados da consulta
 
-    &nbsp;&nbsp;&nbsp;&nbsp; ii.	Veja o resultado em Resultados da consulta
-    &nbsp;&nbsp;&nbsp;&nbsp; iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute nova-mente
+iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute nova-mente
 
 
 ```sql
+
 SELECT count(1) FROM s3object s
+
 ```
 
-    d.	Você pode utilizar a maioria das expressões SQL para consultar os dados
+&nbsp;&nbsp;&nbsp;&nbsp; d.	Você pode utilizar a maioria das expressões SQL para consultar os dados
 
 
 
@@ -317,5 +321,5 @@ SELECT count(1) FROM s3object s
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 21:26:01
+Last update: 2022-02-05 21:29:43
 </div>
