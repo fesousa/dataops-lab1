@@ -156,7 +156,8 @@ Armazenamento com S3 e notificação com SNS.
 ```
 
 
-    f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='10'/> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='10'/> 
 
 12.	Para que a mensagem seja enviada é preciso criar assinaturas (consumidor) e definir quem vai receber a mensagem enviada para o tópico (produtor)
 
