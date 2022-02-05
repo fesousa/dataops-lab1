@@ -157,7 +157,7 @@ Armazenamento com S3 e notificação com SNS.
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='10'/> 
+&nbsp;&nbsp;&nbsp;&nbsp;f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='22'/> 
 
 12.	Para que a mensagem seja enviada é preciso criar assinaturas (consumidor) e definir quem vai receber a mensagem enviada para o tópico (produtor)
 
@@ -194,7 +194,7 @@ Armazenamento com S3 e notificação com SNS.
 18.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='22'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='270'/>
 
 
 19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-nomesobrenome)
@@ -219,40 +219,40 @@ Armazenamento com S3 e notificação com SNS.
     f.	Se receber o alerta abaixo, verifique a política de acesso do SNS
 
 
- <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='22'/>
+ <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='270'/>
  
 
 23.	Faça um teste de incluir um arquivo no bucket
 
     a.	No console do S3, selecione o bucket criado neste lab
 
-    b.	Clique em 
+    b.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img18.png" height='22'/>
 
-    c.	Clique em 
+    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img19.png" height='22'/>
 
-    d.	Procure um arquivo no seu computador
+    d.	Procure um arquivo no seu computador 
 
-    e.	Clique em 
+    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img20.png" height='21'/>
     
-    f.	Clique em 
+    f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img21.png" height='22'/>
     
     g.	Veja o objeto carregado no bucket
     
     h.	Veja no seu e-mail a notificação
 
-24.	Outra forma de carregar um arquivo para o bucket S3 é arrastar e soltar o arquivo para o bucket enquanto estiver na aba             . Faça o teste seguindo os passos do console. Você também deve receber a notificação
+24.	Outra forma de carregar um arquivo para o bucket S3 é arrastar e soltar o arquivo para o bucket enquanto estiver na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img22.png" height='22'/> . Faça o teste seguindo os passos do console. Você também deve receber a notificação
 
 25.	A remoção também gera uma notificação. Faça o teste:
 
-    a.	Na aba               do seu bucket, selecione o arquivo carregado clicando no checkbox
+    a.	Na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img22.png" height='22'/> do seu bucket, selecione o arquivo carregado clicando no checkbox
 
-    b.	Clique em                nas opções que estão na parte superior
+    b.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img23.png" height='23'/> nas opções que estão na parte superior
 
-    c.	Digite “excluir permanentemente” no campo de texto em “Excluir objetos permanen-temente?”
+    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanen-temente?"
 
-    d.	Clique em 
+    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/>
 
-    e.	Clique em 
+    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img25.png" height='22'/>
 
     f.	Veja que o arquivo foi excluído
 
@@ -314,5 +314,5 @@ SELECT count(1) FROM s3object s
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 21:12:02
+Last update: 2022-02-05 21:17:02
 </div>
