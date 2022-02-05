@@ -17,7 +17,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 ## Arquitetura da solução
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/lab1.png" height='330'/>
+<img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/lab1.png" height='330'/>
 
 
 ## Bucket S3 e notificações SNS
@@ -28,12 +28,12 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     a.	O Amazon S3 (Amazon Simple Storage Service) é um serviço de armazenamento de objetos com escalabilidade, disponibilidade, segurança e desempenho. A quantidade de dados que pode ser armazenada é virtualmente ilimitada
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img3.png" height='270'/> 
+<img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img3.png" height='270'/> 
 
 4.	O primeiro passo é criar um bucket para armazenar objetos. 
 
     a.	Um bucket é um contêiner de objetos. Um objeto é qualquer arquivo ou documento colocado no bucket. 
-    b.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>  para criar um novo bucket
+    b.	Clique no botão <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='23'/>  para criar um novo bucket
 
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
 
@@ -45,12 +45,12 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Preste atenção na região. Sempre vamos utilizar essas nos labs
 
-&nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
+&nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
 
 
 6.	Você será redirecionado para a página inicial com a lista dos buckets, na qual verá o bucket criado 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" height='70'/>
+<img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" height='70'/>
 
 7.	O próximo passo é criar um tópico SNS
 
@@ -64,12 +64,12 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='270'/>
+<img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='270'/>
 
 
-9.	Abra o menu lateral clicando em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img7.png" height='22'/>  e escolha a opção <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/>
+9.	Abra o menu lateral clicando em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img7.png" height='22'/>  e escolha a opção <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/>
 
-10.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img9.png" height='22'/>
+10.	Clique no botão <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img9.png" height='22'/>
 
 11.	Na tela de criar e configurar o tópico, configure os seguintes campos:
 
@@ -157,13 +157,13 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='22'/> 
+&nbsp;&nbsp;&nbsp;&nbsp;f.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img10.png" height='22'/> 
 
 12.	Para que a mensagem seja enviada é preciso criar assinaturas (consumidor) e definir quem vai receber a mensagem enviada para o tópico (produtor)
 
-13.	Na lista dos tópicos (se não estiver vendo, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/> no menu lateral), clique no nome do tópico criado anteriormente.
+13.	Na lista dos tópicos (se não estiver vendo, clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/> no menu lateral), clique no nome do tópico criado anteriormente.
 
-14.	Na seção "Assinaturas", clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
+14.	Na seção "Assinaturas", clique em  <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
 
 15.	Na tela de configuração da nova assinatura preencha os seguintes campos:
 
@@ -171,7 +171,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     b.	"Endpoint: coloque o e-mail para receber a notificação
 
-    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
+    c.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
 
 16.	A assinatura para um e-mail depende da autorização do dono do e-mail para completar a configuração. 
 
@@ -183,7 +183,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     d.	Você verá a tela de assinatura confirmada
 
-    e.	Volte ao console do SNS da AWS e clique novamente em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/>
+    e.	Volte ao console do SNS da AWS e clique novamente em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/>
 
     f.	Selecione o tópico criado anteriormente (Topico-Evento-Dados-S3)
 
@@ -194,14 +194,14 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 18.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='270'/>
+<img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='270'/>
 
 
 19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-nomesobrenome)
 
-20.	Clique na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img14.png" height='22'/>
+20.	Clique na aba <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img14.png" height='22'/>
 
-21.	Procure a seção “Notificações de eventos” e clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img15.png" height='22'/>
+21.	Procure a seção “Notificações de eventos” e clique em  <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img15.png" height='22'/>
 
 
 22.	Na tela de criação e configuração do evento, preencha:
@@ -214,45 +214,45 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
     
     d.	"Tópico SNS": Selecione Topico-Evento-Dados-S3
     
-    e.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img16.png" height='22'/>
+    e.	Clique em  <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img16.png" height='22'/>
     
     f.	Se receber o alerta abaixo, verifique a política de acesso do SNS
 
 
- <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='270'/>
+ <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='270'/>
  
 
 23.	Faça um teste de incluir um arquivo no bucket
 
     a.	No console do S3, selecione o bucket criado neste lab
 
-    b.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img18.png" height='22'/>
+    b.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img18.png" height='22'/>
 
-    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img19.png" height='22'/>
+    c.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img19.png" height='22'/>
 
     d.	Procure um arquivo no seu computador 
 
-    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img20.png" height='21'/>
+    e.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img20.png" height='21'/>
     
-    f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img21.png" height='22'/>
+    f.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img21.png" height='22'/>
     
     g.	Veja o objeto carregado no bucket
     
     h.	Veja no seu e-mail a notificação
 
-24.	Outra forma de carregar um arquivo para o bucket S3 é arrastar e soltar o arquivo para o bucket enquanto estiver na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img22.png" height='22'/> . Faça o teste seguindo os passos do console. Você também deve receber a notificação
+24.	Outra forma de carregar um arquivo para o bucket S3 é arrastar e soltar o arquivo para o bucket enquanto estiver na aba <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img22.png" height='22'/> . Faça o teste seguindo os passos do console. Você também deve receber a notificação
 
 25.	A remoção também gera uma notificação. Faça o teste:
 
-    a.	Na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img22.png" height='22'/> do seu bucket, selecione o arquivo carregado clicando no checkbox
+    a.	Na aba <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img22.png" height='22'/> do seu bucket, selecione o arquivo carregado clicando no checkbox
 
-    b.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img23.png" height='23'/> nas opções que estão na parte superior
+    b.	Clique em  <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img23.png" height='23'/> nas opções que estão na parte superior
 
     c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanen-temente?"
 
-    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/>
+    d.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/>
 
-    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img25.png" height='22'/>
+    e.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img25.png" height='22'/>
 
     f.	Veja que o arquivo foi excluído
 
@@ -269,29 +269,29 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
 3.	Quando o upload terminar, acesse novamente o bucket e selecione o objeto que acabou de carregar
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" height='270'/>
+<img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" height='270'/>
  
-4.	Com o objeto selecionado, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img27.png" height='22'/> e depois em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img28.png" height='22'/>
+4.	Com o objeto selecionado, clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img27.png" height='22'/> e depois em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img28.png" height='22'/>
 
-5.	Na tela <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img29.png" height='22'/> configure as opções de seleção:
+5.	Na tela <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img29.png" height='22'/> configure as opções de seleção:
 
     a.	Configurações de entrada:
 
-    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img30.png" height='22'/>
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img30.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img31.png" height='22'/>
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador: <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img31.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img32.png" height='22'/>
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img32.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='22'/>
+    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='22'/>
 
     b.	Configurações de saída
-    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img34.png" height='22'/>
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img34.png" height='22'/>
 
 
     c.	Consulta SQL
 
-    &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img35.png" height='22'/> para executar a consulta padrão e retornar os primeiros 4 registros do CSV
+    &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em <img style="vertical-align:-5px" src="https://raw.github.com/fesousa/dataops-lab1/master/images/img35.png" height='22'/> para executar a consulta padrão e retornar os primeiros 4 registros do CSV
 
 
 ```sql
