@@ -19,8 +19,5 @@ jobs:
           user: ${{ env.GIT_USER_NAME }}
       - name: Colocar data README
         run: |
-          date >> README.md
-          git add README.md
-          echo "Updated the time in README"
-          exit 0
+          echo `date` >> README.md
     
