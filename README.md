@@ -25,7 +25,6 @@ date: today
 
 
 
-
 <div class="footer">
     &copy; 2022 Fernando Sousa
 </div>
