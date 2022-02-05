@@ -285,7 +285,7 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
     &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img32.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='42'/>
+    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='35'/>
 
     b.	Configurações de saída
 
