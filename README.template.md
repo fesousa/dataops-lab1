@@ -37,7 +37,7 @@ Armazenamento com S3 e notificação com SNS.
     b.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>  para criar um novo bucket
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
 
-&nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-impacta-dados-nomesobrenome
+&nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-dados-nomesobrenome
         
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Troque "nomesobrenome" pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
    
@@ -63,7 +63,97 @@ Armazenamento com S3 e notificação com SNS.
 
 8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='300'/>
+
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='270'/>
+
+
+9.	Abra o menu lateral clicando em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img7.png" height='22'/>  e escolha a opção <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/>
+
+10.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img9.png" height='22'/>
+
+11.	Na tela de criar e configurar o tópico, configure os seguintes campos:
+
+    a.	"Tipo": Padrão 
+
+    b.	"Nome": Topico-Evento-Dados-S3
+
+    c.	Abra a seção "Política de acesso"
+
+    &nbsp;&nbsp;&nbsp;&nbsp; i.	Uma política de acesso define quais as permissões do tópico criado. A permissão padrão define que apenas o proprietário do tópico (conta que criou) pode publicar mensagens. É preciso dar a permissão para o S3 também publicar uma mensagem
+
+    d.	Selecione a opção "Avançado"
+
+    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separan-do por uma vírgula (,). Os campos em negrito devem ser substituídos pelos valores da sua conta. Sempre que encontrar um campo em negrito nas instruções, lembre-se de trocar por uma configuração do seu ambiente
+
+
+```json
+{
+  "Sid": "Statement-id",
+  "Effect": "Allow",
+  "Principal": { "Service": "s3.amazonaws.com" },
+  "Action": "sns:Publish",
+  "Resource": "arn:aws:sns:us-east-1:id-conta:Topico-Evento-Dados-S3",
+  "Condition": {
+    "ArnLike": {
+      "aws:SourceArn": "arn:aws:s3:::dataops-dados-nomesobrenome"
+    }
+  }
+}
+```
+
+    Troque o nome do bucket (dataops-dados-nomesobrenome) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user..., campo Minha Conta)
+
+    O documento completo da política deve ficar assim:
+
+```json
+{
+  "Version": "2008-10-17",
+  "Id": "__default_policy_ID",
+  "Statement": [
+    {
+      "Sid": "__default_statement_ID",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": [
+        "SNS:Publish",
+        "SNS:RemovePermission",
+        "SNS:SetTopicAttributes",
+        "SNS:DeleteTopic",
+        "SNS:ListSubscriptionsByTopic",
+        "SNS:GetTopicAttributes",
+        "SNS:Receive",
+        "SNS:AddPermission",
+        "SNS:Subscribe"
+      ],
+      "Resource": "",
+      "Condition": {
+        "StringEquals": {
+          "AWS:SourceOwner": " id-conta"
+        }
+      }
+    },
+    {
+      "Sid": "Statement-id",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "sns:Publish",
+      "Resource": "arn:aws:sns:us-east-1:id-conta:Topico-Evento-Dados-S3",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::dataops-dados-nomesobrenome"
+        }
+      }
+    }
+  ]
+}
+
+```
+
+
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
