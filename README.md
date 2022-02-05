@@ -37,7 +37,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
 
-&nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-dados-nomesobrenome
+&nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-dados-***nomesobrenome***
         
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Troque "nomesobrenome" pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
    
@@ -322,5 +322,5 @@ SELECT count(1) FROM s3object s
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 21:51:43
+Last update: 2022-02-05 21:58:17
 </div>
