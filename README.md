@@ -39,7 +39,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 &nbsp;&nbsp;&nbsp;&nbsp;    a.	"Nome do bucket": dataops-dados-***nomesobrenome***
         
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Troque "nomesobrenome" pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Troque ***nomesobrenome*** pelo seu nome e sobrenome. O nome do bucket deve ser único em toda a AWS, independente da conta e região
    
 &nbsp;&nbsp;&nbsp;&nbsp;    b. "Região da AWS": Leste dos EUA (Norte da Virgínia) us-east-1
 
@@ -54,11 +54,12 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 7.	O próximo passo é criar um tópico SNS
 
-    a.	O Amazon SNS (Amazon Simple Notification Service) é um serviço de mensagens totalmente gerenciado para comunicação entre aplicações e comunicação entre apli-cações e pessoas
+    a.	O Amazon SNS (Amazon Simple Notification Service) é um serviço de mensagens totalmente gerenciado para comunicação entre aplicações e comunicação entre aplicações e pessoas
 
     b.	As mensagens são enviadas e armazenadas em um tópico, num sistema de muitos para muitos. Ou seja, uma mensagem pode ser enviada para diversos destinos
 
-    c.	Mensagem são enviadas por um sistema de push para destinos que fazem a assina-tura de um tópico. Um tópico pode ter vários assinantes
+    c.	Mensagem são enviadas por um sistema de *push* para destinos que fazem a assinatura de um tópico. Um tópico pode ter vários assinantes
+    
     d.	Um assinante pode ser um e-mail, SMS, endpoint HTTP/S, função lambda, fila SQS, entre outros.
 
 8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
@@ -83,7 +84,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     d.	Selecione a opção "Avançado"
 
-    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separan-do por uma vírgula (,). Os campos em negrito devem ser substituídos pelos valores da sua conta. Sempre que encontrar um campo em negrito nas instruções, lembre-se de trocar por uma configuração do seu ambiente
+    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separando por uma vírgula (,). Os campos em negrito devem ser substituídos pelos valores da sua conta. Sempre que encontrar um campo em negrito nas instruções, lembre-se de trocar por uma configuração do seu ambiente
 
 
 ```json
@@ -102,7 +103,8 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 ```
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Troque o nome do bucket (dataops-dados-nomesobrenome) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user..., campo Minha Conta)
+&nbsp;&nbsp;&nbsp;&nbsp;Troque o nome do bucket (dataops-dados-***nomesobrenome***) pelo nome do bucket que criou nos passos anteriores e idconta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user... e clicar no ícone de copiar)
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;O documento completo da política deve ficar assim:
 
@@ -169,7 +171,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     a.	"Protocolo": E-mail
 
-    b.	"Endpoint: coloque o e-mail para receber a notificação
+    b.	"Endpoint": coloque o e-mail para receber a notificação
 
     c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
 
@@ -197,7 +199,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='270'/>
 
 
-19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-nomesobrenome)
+19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-***nomesobrenome***)
 
 20.	Clique na aba <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img14.png" height='22'/>
 
@@ -219,7 +221,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
     f.	Se receber o alerta abaixo, verifique a política de acesso do SNS
 
 
- <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='270'/>
+ <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='230'/>
  
 
 23.	Faça um teste de incluir um arquivo no bucket
@@ -248,9 +250,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     b.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img23.png" height='23'/> nas opções que estão na parte superior
 
-    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanen-temente?"
+    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanentemente?"
 
-    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/>
+    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/> e espere a barra superior indicar que finalizou (cor verde)
 
     e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img25.png" height='22'/>
 
@@ -263,13 +265,13 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar somente parte dos dados de um objeto em um bucket S3, utilizando SQL. Ele é utilizado para reduzir o volume de dados transferidos para a aplicação e deixar a consulta de objetos mais rápidas e mais baratas
 
-1.	Acesse o bucket dataops-dados-nomesobrenome criado anteriormente
+1.	Acesse o bucket dataops-dados-***nomesobrenome*** criado anteriormente
 
 2.	Faça o upload do arquivo [vacinas_ac_agosto.csv](https://raw.github.com/fesousa/dataops-lab1/master/data/vacinas_ac_agosto.csv) disponibilizado
 
 3.	Quando o upload terminar, acesse novamente o bucket e selecione o objeto que acabou de carregar
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" height='270'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" height='300'/>
  
 4.	Com o objeto selecionado, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img27.png" height='22'/> e depois em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img28.png" height='22'/>
 
@@ -283,9 +285,10 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
     &nbsp;&nbsp;&nbsp;&nbsp;ii.	CSV delimitador personalizado: ponto-e-vírgula <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img32.png" height='22'/>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='22'/>
+    &nbsp;&nbsp;&nbsp;&nbsp;iv.	Marque <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img33.png" height='35'/>
 
     b.	Configurações de saída
+
     &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img34.png" height='22'/>
 
 
@@ -303,7 +306,7 @@ SELECT * FROM s3object s LIMIT 5
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii.	Veja o resultado em Resultados da consulta
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute nova-mente
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii.	Altere a consulta para retornar a quantidade de registros do CSV e execute novamente
 
 
 ```sql
@@ -322,5 +325,5 @@ SELECT count(1) FROM s3object s
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-05 21:58:17
+Last update: 2022-02-06 00:03:16
 </div>
