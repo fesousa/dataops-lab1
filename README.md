@@ -291,7 +291,6 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
     &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img34.png" height='22'/>
 
-
     c.	Consulta SQL
 
     &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img35.png" height='22'/> para executar a consulta padrão e retornar os primeiros 4 registros do CSV
@@ -325,5 +324,5 @@ SELECT count(1) FROM s3object s
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-02-06 00:03:16
+Last update: 2022-02-06 02:09:30
 </div>
