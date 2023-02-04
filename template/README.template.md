@@ -33,6 +33,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 4.	O primeiro passo é criar um bucket para armazenar objetos. 
 
     a.	Um bucket é um contêiner de objetos. Um objeto é qualquer arquivo ou documento colocado no bucket. 
+    
     b.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>  para criar um novo bucket
 
 5.	Na tela de criação e configuração do novo bucket, preencha os seguintes campos:
@@ -291,7 +292,6 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
     &nbsp;&nbsp;&nbsp;&nbsp; i.	Formato: <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img34.png" height='22'/>
 
-
     c.	Consulta SQL
 
     &nbsp;&nbsp;&nbsp;&nbsp;i.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img35.png" height='22'/> para executar a consulta padrão e retornar os primeiros 4 registros do CSV
@@ -324,6 +324,5 @@ SELECT count(1) FROM s3object s
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
-    
-Last update: 2022-02-06 00:03:16
+    {{update}}
 </div>
