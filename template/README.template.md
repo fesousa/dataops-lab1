@@ -28,7 +28,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     a.	O Amazon S3 (Amazon Simple Storage Service) é um serviço de armazenamento de objetos com escalabilidade, disponibilidade, segurança e desempenho. A quantidade de dados que pode ser armazenada é virtualmente ilimitada
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img3.png" height='270'/> 
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img3.png" width='100%'/> 
 
 4.	O primeiro passo é criar um bucket para armazenar objetos.
 
@@ -45,20 +45,20 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 &nbsp;&nbsp;&nbsp;&nbsp;    b. "Região da AWS": Leste dos EUA (Norte da Virgínia) us-east-1
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Preste atenção na região. Sempre vamos utilizar essas nos labs
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Preste atenção na região. Sempre vamos utilizar essa mesma nos labs
 
 &nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
 
 
 6.	Você será redirecionado para a página inicial com a lista dos buckets, na qual verá o bucket criado 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" height='70'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img5.png" width='100%'/>
 
 7.	O próximo passo é criar um tópico SNS
 
     a.	O Amazon SNS (Amazon Simple Notification Service) é um serviço de mensagens totalmente gerenciado para comunicação entre aplicações e comunicação entre aplicações e pessoas
 
-    b.	As mensagens são enviadas e armazenadas em um tópico, num sistema de muitos para muitos. Ou seja, uma mensagem pode ser enviada para diversos destinos
+    b.	As mensagens são enviadas e armazenadas em um tópico, num sistema de muitos para muitos. Ou seja, mensagens podem ser enviadas para diversos destinos
 
     c.	Mensagem são enviadas por um sistema de *push* para destinos que fazem a assinatura de um tópico. Um tópico pode ter vários assinantes
     
@@ -67,10 +67,10 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 8.	No console da AWS, procure pelo serviço SNS na barra pesquisa superior e clique para abrir o serviço
 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" height='270'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img6.png" width='100%' />
 
 
-9.	Abra o menu lateral clicando em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img7.png" height='22'/>  e escolha a opção <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/>
+9.No menu lateral escolha a opção <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/>. Caso náo veja essa opção no menu lateral esquerdo, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img7.png" height='22'/> para abrir o menu. 
 
 10.	Clique no botão <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img9.png" height='22'/>
 
@@ -86,7 +86,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     d.	Selecione a opção "Avançado"
 
-    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separando por uma vírgula (,). Os campos em negrito devem ser substituídos pelos valores da sua conta. Sempre que encontrar um campo em negrito nas instruções, lembre-se de trocar por uma configuração do seu ambiente
+    e.	Adicione o seguinte "Statement" antes do fechamento do último colchete (]), separando por uma vírgula (,).
 
 
 ```json
@@ -105,7 +105,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 ```
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Troque o nome do bucket (dataops-dados-***nomesobrenome***) pelo nome do bucket que criou nos passos anteriores e idconta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user... e clicar no ícone de copiar)
+&nbsp;&nbsp;&nbsp;&nbsp;Troque o nome do bucket (dataops-dados-***nomesobrenome***) pelo nome do bucket que criou nos passos anteriores e id-conta pelo id da sua conta (disponível na barra superior, ao clicar no nome do usuário – voclabs/user... e clicar no ícone de copiar)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;O documento completo da política deve ficar assim:
@@ -181,7 +181,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     a.	Acesse a caixa de e-mail que configurou na assinatura
 
-    b.	Procure pelo e-mail com o título "AWS Notification - Subscription Confirmation"
+    b.	Procure pelo e-mail com o título "AWS Notification - Subscription Confirmation". Verifique também na caixa de spam.
 
     c.	Clique no link "Confirm subscription"
 
@@ -198,7 +198,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 18.	No console da AWS, procure pelo serviço S3 na barra pesquisa superior e clique para abrir o serviço
 
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" height='270'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img13.png" width="100%"/>
 
 
 19.	Selecione o bucket criado anteriormente clicando no nome (dataops-dados-***nomesobrenome***)
@@ -220,10 +220,10 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
     
     e.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img16.png" height='22'/>
     
-    f.	Se receber o alerta abaixo, verifique a política de acesso do SNS
+    f.	Se receber o alerta abaixo, verifique se a política de acesso do SNS. Lembre-se que você deve alterar o nome do bucket e o id da conta da política pelas configurações do seu ambiente.
 
 
- <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" height='230'/>
+ <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img17.png" width='100%'/>
  
 
 23.	Faça um teste de incluir um arquivo no bucket
@@ -238,7 +238,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img20.png" height='21'/>
     
-    f.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img21.png" height='22'/>
+    f.	Quando o carregamento finalizar, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img21.png" height='22'/>
     
     g.	Veja o objeto carregado no bucket
     
@@ -252,11 +252,11 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     b.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img23.png" height='23'/> nas opções que estão na parte superior
 
-    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanentemente?"
+    c.	Digite "excluir permanentemente" no campo de texto em "Excluir objetos permanentemente?". Se estiver com o console em inglês, digite o que está sendo pedido.
 
     d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img24.png" height='22'/> e espere a barra superior indicar que finalizou (cor verde)
 
-    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img25.png" height='22'/>
+    e.	Quando o processo terminar, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img25.png" height='22'/>
 
     f.	Veja que o arquivo foi excluído
 
@@ -269,11 +269,11 @@ S3 Select é uma funcionalidade do S3 que possibilita selecionar e retornar some
 
 1.	Acesse o bucket dataops-dados-***nomesobrenome*** criado anteriormente
 
-2.	Faça o upload do arquivo [vacinas_ac_agosto.csv](https://raw.github.com/fesousa/dataops-lab1/master/data/vacinas_ac_agosto.csv) disponibilizado
+2.	Faça o upload do arquivo [vacinas_ac_agosto.csv](https://raw.githubusercontent.com/fesousa/dataops-lab1/master/data/vacinas_ac_agosto.csv). Para baixar o arquivo basta procurar a opção "Salvar" ou "Salvar como" no seu navegador. Outra opção é comando "ctrl + s" do teclado.
 
 3.	Quando o upload terminar, acesse novamente o bucket e selecione o objeto que acabou de carregar
 
-<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" height='300'/>
+<img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img26.png" widtah='100%'/>
  
 4.	Com o objeto selecionado, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img27.png" height='22'/> e depois em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img28.png" height='22'/>
 
