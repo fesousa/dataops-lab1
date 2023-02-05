@@ -9,6 +9,12 @@ on:
   workflow_dispatch:
 
 jobs:
+  cnfig_git:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git config
+        run: | 
+          git config --global --add safe.directory '*'
   readme_code:
     runs-on: ubuntu-latest
     steps:
