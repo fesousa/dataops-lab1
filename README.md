@@ -323,8 +323,8 @@ SELECT count(1) FROM s3object s
 
 
 <div class="footer">
-    &copy; 2022 Fernando Sousa
+    &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-02-05 15:07:45
+Last update: 2023-02-12 17:34:13
 </div>
