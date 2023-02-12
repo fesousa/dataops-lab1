@@ -323,7 +323,7 @@ SELECT count(1) FROM s3object s
 
 
 <div class="footer">
-    &copy; 2022 Fernando Sousa
+    &copy; 2023 Fernando Sousa
     <br/>
     {{update}}
 </div>
