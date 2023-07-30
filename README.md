@@ -214,9 +214,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
     
     b.	"Tipos de evento": Selecione os checkbox de "Todos os eventos de criação de objeto" e “Todos os eventos de exclusão de objeto”
     
-    c.	"Destino": Tópico SNS
+    c.	"Destino": Tópico do SNS
     
-    d.	"Tópico SNS": Selecione Topico-Evento-Dados-S3
+    d.	"Tópico do SNS": Selecione Topico-Evento-Dados-S3
     
     e.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img16.png" height='22'/>
     
@@ -326,5 +326,5 @@ SELECT count(1) FROM s3object s
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-02-12 17:34:13
+Last update: 2023-07-30 19:08:05
 </div>
