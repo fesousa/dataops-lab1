@@ -165,7 +165,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 12.	Para que a mensagem seja enviada é preciso criar assinaturas (consumidor) e definir quem vai receber a mensagem enviada para o tópico (produtor)
 
-13.	Na lista dos tópicos (se não estiver vendo, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/> no menu lateral), clique no nome do tópico criado anteriormente.
+13.	Na lista dos tópicos (se não estiver vendo, clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/> no menu lateral), clique no nome do tópico criado anteriormente.
 
 14.	Na seção "Assinaturas", clique em  <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img12.png" height='22'/>
 
