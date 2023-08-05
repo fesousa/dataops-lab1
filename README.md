@@ -187,7 +187,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     d.	Você verá a tela de assinatura confirmada
 
-    e.	Volte ao console do SNS da AWS e clique novamente em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img11.png" height='22'/>
+    e.	Volte ao console do SNS da AWS e clique novamente em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img8.png" height='22'/>
 
     f.	Selecione o tópico criado anteriormente (Topico-Evento-Dados-S3)
 
@@ -326,5 +326,5 @@ SELECT count(1) FROM s3object s
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-08-05 17:36:12
+Last update: 2023-08-05 17:37:20
 </div>
