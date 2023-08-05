@@ -47,7 +47,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Preste atenção na região. Sempre vamos utilizar essa mesma nos labs
 
-&nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.png" height='22'/>
+&nbsp;&nbsp;&nbsp;&nbsp;    c. Clique em <img src="https://raw.github.com/fesousa/dataops-lab1/master/images/img4.1.png" height='22'/>
 
 
 6.	Você será redirecionado para a página inicial com a lista dos buckets, na qual verá o bucket criado 
